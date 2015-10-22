@@ -1,0 +1,199 @@
+ |  Class(...)
+ |      self.Class() -> Class name.
+ |      @return: Class name.
+ |
+ |  __init__(...)
+ |      x.__init__(...) initializes x; see help(type(x)) for signature
+ |
+ |  clearAnimated(...)
+ |      Clear animation for channel 'c'. Return True if successful.
+ |
+ |  clearFlag(...)
+ |      self.clearFlag(f) -> None.
+ |      Clear flag.
+ |      @param f: Flag.
+ |      @return: None.
+ |
+ |  critical(...)
+ |      self.critical(message) -> None.
+ |      @param message: message to put the knob in error, and do a popup.
+ |      @return: None.
+ |
+ |  debug(...)
+ |      self.debug(message) -> None.
+ |      @param message: message to put out to the error console, attached to the knob, if the verbosity level is set high enough.
+ |      @return: None.
+ |
+ |  enabled(...)
+ |      self.enabled() -> Boolean.
+ |
+ |      @return: True if the knob is enabled, False if it's disabled.
+ |
+ |  error(...)
+ |      self.error(message) -> None.
+ |      @param message: message to put the knob in error.
+ |      @return: None.
+ |
+ |  fromScript(...)
+ |      Initialise from script.
+ |
+ |  fullyQualifiedName(...)
+ |      self.fullyQualifiedName(channel=-1) -> string
+ |      Returns the fully-qualified name of the knob within the node. This can be useful for expression linking.
+ |
+ |      @param channel: Optional parameter, specifies the channel number of the sub-knob (for example, channels of  0 and 1 would refer to the x and y of a XY_Knob respectively), leave blank or set to -1 to get the  qualified name of the knob only.
+ |      @return: The string of the qualified knob or sub-knob, which can be used directly in expression links.
+ |
+ |  getDerivative(...)
+ |      Return derivative at time 't' for channel 'c'.
+ |
+ |  getFlag(...)
+ |      self.getFlag(f) -> Bool.
+ |      Returns whether the input flag is set.
+ |      @param f: Flag.
+ |      @return: True if set, False otherwise.
+ |
+ |  getIntegral(...)
+ |      Return integral at the interval [t1, t2] for channel 'c'.
+ |
+ |  getKeyIndex(...)
+ |      Return keyframe index at time 't' for channel 'c'.
+ |
+ |  getKeyList(...)
+ |      Get all unique keys on the knob.  Returns list.
+ |
+ |  getKeyTime(...)
+ |      Return index of the keyframe at time 't' for channel 'c'.
+ |
+ |  getNthDerivative(...)
+ |      Return nth derivative at time 't' for channel 'c'.
+ |
+ |  getNumKeys(...)
+ |      Return number of keyframes for channel 'c'.
+ |
+ |  getValue(...)
+ |      Return value at the current frame for channel 'c'.
+ |
+ |  getValueAt(...)
+ |      Return value at time 't' for channel 'c'.
+ |
+ |  hasExpression(...)
+ |      self.hasExpression(index=-1) -> bool
+ |      Return True if animation at index 'index' has an expression.
+ |      @param index: Optional index parameter. Defaults to -1 if not specified. This can be specified as a keyword parameter if desired.
+ |      @return: True if has expression, False otherwise.
+ |
+ |  isAnimated(...)
+ |      Return True if channel 'c' is animated.
+ |
+ |  isKey(...)
+ |      Return True if there is a keyframe at the current frame for channel 'c'.
+ |
+ |  isKeyAt(...)
+ |      Return True if there is a keyframe at time 't' for channel 'c'.
+ |
+ |  label(...)
+ |      self.label() -> label.
+ |      @return: label.
+ |
+ |  name(...)
+ |      self.name() -> name.
+ |      @return: name.
+ |
+ |  node(...)
+ |      self.node() -> nuke.Node
+ |      Return the node that this knob belongs to. If the node has been cloned, we'll always return a reference to the original.
+ |      @return: The node which owns this knob, or None if the knob has no owner yet.
+ |
+ |  removeKey(...)
+ |      Remove key for channel 'c'. Return True if successful.
+ |
+ |  removeKeyAt(...)
+ |      Remove key at time 't' for channel 'c'. Return True if successful.
+ |
+ |  setAnimated(...)
+ |      Set channel 'c' to be animated.
+ |
+ |  setEnabled(...)
+ |      self.setEnabled(enabled) -> None.
+ |
+ |      Enable or disable the knob.
+ |      @param enabled: True to enable the knob, False to disable it.
+ |
+ |  setExpression(...)
+ |      self.setExpression(expression, channel=-1, view=None) -> bool
+ |      Set the expression for a knob. You can optionally specify a channel to set the expression for.
+ |
+ |      @param expression: The new expression for the knob. This should be a string.
+ |      @param channel: Optional parameter, specifying the channel to set the expression for. This should be an integer.
+ |      @param view: Optional view parameter. Without, this command will set the expression for the current view theinterface is displaying. Can be the name of the view or the index.
+ |      @return: True if successful, False if not.
+ |
+ |  setFlag(...)
+ |      self.setFlag(f) -> None.
+ |      Logical OR of the argument and existing knob flags.
+ |      @param f: Flag.
+ |      @return: None.
+ |
+ |  setLabel(...)
+ |      self.setLabel(s) -> None.
+ |      @param s: New label.
+ |      @return: None.
+ |
+ |  setName(...)
+ |      self.setName(s) -> None.
+ |      @param s: New name.
+ |      @return: None.
+ |
+ |  setTooltip(...)
+ |      self.setTooltip(s) -> None.
+ |      @param s: New tooltip.
+ |      @return: None.
+ |
+ |  setValue(...)
+ |      self.setValue(val, chan) -> bool
+ |
+ |      Sets the value 'val' at channel 'chan'.
+ |      @return: True if successful, False if not.
+ |
+ |  setValueAt(...)
+ |      self.setValueAt(val, time, chan) -> bool
+ |
+ |      Sets the value 'val' at channel 'chan' for time 'time'.
+ |      @return: True if successful, False if not.
+ |
+ |  setVisible(...)
+ |      self.setVisible(visible) -> None.
+ |
+ |      Show or hide the knob.
+ |      @param visible: True to show the knob, False to hide it.
+ |
+ |  toScript(...)
+ |      toScript(quote, context=current) -> string.
+ |
+ |      Return the value of the knob in script syntax.
+ |      Pass True for quote to return results quoted in {}.
+ |      Pass None for context to get results for all views and key times (as stored in a .nk file).
+ |
+ |  tooltip(...)
+ |      self.tooltip() -> tooltip.
+ |      @return: tooltip.
+ |
+ |  value(...)
+ |      Return value at the current frame for channel 'c'.
+ |
+ |  visible(...)
+ |      self.visible() -> Boolean.
+ |
+ |      @return: True if the knob is visible, False if it's hidden.
+ |
+ |  warning(...)
+ |      self.warning(message) -> None.
+ |      @param message: message to put a warning on the knob.
+ |      @return: None.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |
+ |  __new__ = <built-in method __new__ of type object>
+ |      T.__new__(S, ...) -> a new object with type S, a subtype of T

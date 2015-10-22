@@ -1,0 +1,53 @@
+Percent Blue Stars Obsolete_Knob None 
+Color Variance Obsolete_Knob None 
+colorVariance Array_Knob 0.002 
+autolabel PythonKnob None 
+hide_input Boolean_Knob 0.0 
+outputFile File_Knob None 
+note_font_size Array_Knob 11.0 
+Percent Red Stars Obsolete_Knob None 
+onCreate PythonKnob None 
+updateUI PythonKnob None 
+help EvalString_Knob None 
+Saturation Array_Knob 1.0 
+knobChanged PythonKnob None 
+note_font Font_Knob None 
+tile_color ColorChip_Knob 0.0 
+bookmark Boolean_Knob 0.0 
+selected Boolean_Knob 0.0 
+rx Array_Knob 0.0 
+ry Array_Knob 0.0 
+label Multiline_Eval_String_Knob None 
+Large Stars Obsolete_Knob None 
+onDestroy PythonKnob None 
+No Camera Translate Obsolete_Knob None 
+noCameraTranslate Boolean_Knob 1.0 
+writeEnable Boolean_Knob 0.0 
+indicators Array_Knob 0.0 
+starFile File_Knob None 
+icon File_Knob None 
+dope_sheet Boolean_Knob 0.0 
+xpos Array_Knob -2147483648.0 
+colorFactor Array_Knob 0.005 
+Brightness Array_Knob 1.0 
+ypos Array_Knob 0.0 
+Color Factor Obsolete_Knob None 
+postage_stamp Boolean_Knob 0.0 
+disable Disable_Knob 0.0 
+postage_stamp_frame Array_Knob 1.0 
+lifetimeStart Array_Knob 0.0 
+Star file Obsolete_Knob None 
+panel Obsolete_Knob None 
+redStars Array_Knob 13.0 
+Write File Obsolete_Knob None 
+name String_Knob None 
+Output File Obsolete_Knob None 
+brightClamp Array_Knob 0.28 
+useLifetime Boolean_Knob 0.0 
+blueStars Array_Knob 23.0 
+cached Boolean_Knob 0.0 
+Brightness Low Clamp Obsolete_Knob None 
+note_font_color ColorChip_Knob 0.0 
+lifetimeEnd Array_Knob 0.0 
+gl_color ColorChip_Knob 0.0 
+largeStars Boolean_Knob 0.0 
