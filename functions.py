@@ -7,6 +7,11 @@ def __filter(name):
     return True
 
 
+##############################################################
+#                       Node Functions                       #
+##############################################################
+
+
 def node_knob(self, val):
     return self._knobs[val]
 
@@ -21,6 +26,11 @@ def node_add(self, key, val):
 
 def node___getitem__(self, key):
     return self._knobs[key]
+
+
+##############################################################
+#                       Knob Functions                       #
+##############################################################
 
 
 def knob_value(self):
