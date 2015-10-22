@@ -1,0 +1,29 @@
+BackdropNode {
+ inputs 0
+ name BackdropNode1
+ tile_color 0x6383600
+ label "\"Render\" Tab"
+ note_font_size 42
+ xpos -659
+ ypos -514
+ bdwidth 878
+ bdheight 356
+}
+Dot {
+ name Dot9
+ xpos -1986
+ ypos -1254
+ hide_input true
+}
+ColorCorrect {
+ saturation 2
+ name ColorCorrect1
+ xpos -2020
+ ypos -1785
+}
+Shuffle {
+ alpha white
+ name Shuffle1
+ xpos -2020
+ ypos -1737
+}
