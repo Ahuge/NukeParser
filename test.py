@@ -1,7 +1,8 @@
+import os
 from create_class import create_node
 from parse import ParseNk
 
-PATH = r"D:\Users\Alex\Documents\GitHub\NukeParser\nodes.nk"
+PATH = os.path.join(os.path.dirname(__file__), "nodes.nk")
 
 nodes = ParseNk(PATH)
 node_types = []

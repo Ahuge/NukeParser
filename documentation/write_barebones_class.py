@@ -119,11 +119,13 @@ def main(from_path, to_path):
     write_python_file(functions, to_path)
 
 if __name__ == "__main__":
-    f = r"D:\Users\Alex\Documents\GitHub\NukeParser\documentation\Node.txt"
-    t = r"D:\Users\Alex\Documents\GitHub\NukeParser\documentation\node.new"
+    os.path.join(os.path.dirname(__file__), "Node.txt")
 
-    f = r"D:\Users\Alex\Documents\GitHub\NukeParser\documentation\Knob.txt"
-    t = r"D:\Users\Alex\Documents\GitHub\NukeParser\documentation\knob.new"
+    f = os.path.join(os.path.dirname(__file__), "Node.txt")
+    t = os.path.join(os.path.dirname(__file__), "node.new")
+
+    f = os.path.join(os.path.dirname(__file__), "Knob.txt")
+    t = os.path.join(os.path.dirname(__file__), "knob.new")
 
     main(f, t)
 
