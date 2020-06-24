@@ -2,9 +2,7 @@ __author__ = 'Alex'
 
 
 def __filter(name):
-    if name[0] == "_":
-        return False
-    return True
+    return name[0] != "_"
 
 
 ##############################################################
