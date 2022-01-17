@@ -6,5 +6,4 @@ from meta import NodeBuilder
 
 def create_node(clsname, args):
 
-    new_class = NodeBuilder(clsname, Node, args)
-    return new_class
+    return NodeBuilder(clsname, Node, args)

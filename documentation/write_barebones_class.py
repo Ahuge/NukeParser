@@ -37,8 +37,7 @@ def setup_headers(to_path):
 def start_function(line):
     match = FUNCTION.match(line)
     if match:
-        name = match.group(1)
-        return name
+        return match.group(1)
 
 
 def get_functions(code_lines):
@@ -54,7 +53,7 @@ def get_functions(code_lines):
                 current_function['doc_string'] = ""
                 inside_function = True
 
-        elif inside_function:
+        else:
             match = FUNCTION.match(line)
             if match:
                 # Quick! End our function and start again!
@@ -99,9 +98,8 @@ def write_python_file(code_functions, to_path):
         params = function['params']
         docstring = function['doc_string']
 
-        write_lines = ["\n"]
+        write_lines = ["\n", get_function_def(name, params)]
 
-        write_lines.append(get_function_def(name, params))
         if len(docstring) > 5:
             write_lines.append("\n        \"\"\"\n" + docstring + "    \"\"\"")
         write_lines.append("\n        raise NotImplementedError(\"This function is not written yet. Please put in an "
